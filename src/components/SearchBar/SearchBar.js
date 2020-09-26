@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SearchBar(props) {
   return (
-    <form onSubmit={(e) => props.handleSubmit(e)}>
+    <form onSubmit={props.submit}>
       <input
         type="text"
         name="q"

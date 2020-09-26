@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  width: 700px;
   margin: 10px auto;
 }
 
@@ -12,4 +11,8 @@ header {
 h1 {
   padding: 25px;
   margin-bottom: 10px;
+}
+
+form * {
+  margin: 0 5px;
 }

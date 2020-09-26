@@ -43,28 +43,12 @@ class App extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         this.setState({ items: data.items });
-        console.log(this.state.items);
-        console.log(this.state.items[0].saleInfo.listPrice.amount);
-        // this.state.items.map((item) =>
-        //   item.saleInfo.listPrice.amount && item.volumeInfo
-        //     ? console.log(item.saleInfo.listPrice.amount)
-        //     : console.log("No Sales Amount")
-        // );
       });
   };
 
   componentDidMount() {
     this.search();
   }
-
-  // renderPrice(item) {
-  //   this.setState({ item: saleInfo: "" })
-  //   if (this.state.items.saleInfo.listPrice.amount === "") {
-  //     return <li>No Sales Price Listed</li>;
-  //   } else {
-  //     return <li>{this.state.items.saleInfo.listPrice.amount}</li>;
-  //   }
-  // }
 
   render() {
     return (
